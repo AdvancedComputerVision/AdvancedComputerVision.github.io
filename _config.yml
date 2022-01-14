@@ -1,11 +1,11 @@
-title: Your awesome title
+title: Advanced Computer Vision Meetup
 author:
   name: GitHub User
   email: your-email@domain.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  We meet and discuss CV papers, mainly 
+  in the area of ML and sometimes interesting off-topic papers. We also meet and 
+  do interesting projects. You are always welcome to join any of those.
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
@@ -16,8 +16,10 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: jekyllrb
-    github:  jekyll
+    #twitter: jekyllrb
+    #github:  jekyll
+    meetup: https://www.meetup.com/advanced-computer-vision/
+    discord: https://discord.gg/CGXfsDMbEs
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll

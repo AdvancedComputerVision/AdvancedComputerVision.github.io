@@ -9,12 +9,34 @@ layout: default
 
   {{ content }}
 
+  {% assign posts2 = site.posts | where: "project", true %}
+  {%- assign posts_filtered2 = posts2 | where: "active", true -%}
+    <ul class="post-list">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {%- for post in posts_filtered2 -%}
+      <li>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {%- if post.project -%}
+            (Project)&nbsp;
+            {%- endif -%}
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
 
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
     {% assign posts = site.posts %}
   {% endif %}
+  {%- assign posts_filtered = posts | where: "active", false -%}
 
 
   {%- if posts.size > 0 -%}
@@ -23,11 +45,14 @@ layout: default
     {%- endif -%}
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
+      {%- for post in posts_filtered -%}
       <li>
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
+            {%- if post.project -%}
+            (Project)&nbsp;
+            {%- endif -%}
             {{ post.title | escape }}
           </a>
         </h3>
