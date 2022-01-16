@@ -29,7 +29,7 @@
             {%- endif -%}
           {%- endfor -%}
           {%- for path in posts_filtered2 -%}
-            <a class="page-link" href="{{ path.url | relative_url }}">{{ path.title | escape }}</a>
+            <a class="page-link" href="{{ path.url | relative_url }}">{{ path.title_short | escape }}</a>
           {%- endfor -%}
         </div>
       </nav>
