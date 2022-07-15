@@ -29,6 +29,4 @@ The main improvements we touch were:
 
 YOLOX is a great paper because it groups a lot of new insights in Single Stage Detectors  (SSD) but it is also a bad paper because it does not explains any of the concepts it uses nor proposes something new.
 
-
-
-**Presentation here: [PDF](assets/YOLOX.pdf**)
+**Presentation here: [PDF](/assets/YOLOX.pdf)****
