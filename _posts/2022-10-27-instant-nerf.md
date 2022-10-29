@@ -1,6 +1,6 @@
 ---
 layout: "post" 
-title: "Session 14: EPro-PnP"
+title: "Session 14: Instant Neural Graphics Primitives"
 excerpt_separator: <!--more-->
 categories: misc
 project: false
@@ -9,13 +9,9 @@ active: false
 
 # Instant Neural Graphics Primitives with a Multiresolution Hash Encoding
 
-
-
 In this session, [Moritz Hambach](https://www.linkedin.com/in/moritz-hambach-277326b0) and [Rishabh Raj](https://www.linkedin.com/in/rishabhraj17/) will be leading the conversation. They will explain the main parts and logic behind the paper, show some demos and help moderate the session. These events are informal conversations where everyone has the opportunity to ask, clarify or add any type of intervention.
 
 We welcome all levels. We strongly recommend reading the paper beforehand.
-
-
 
 Links:
 
@@ -24,8 +20,6 @@ Links:
 * Paper: [https://nvlabs.github.io/instant-ngp/assets/mueller2022instant.pdf](https://nvlabs.github.io/instant-ngp/assets/mueller2022instant.pdf)
 
 * Slides: [Link](/assets/instant_nerf/Nvidia_ngp.pdf)
-
-
 
 ----------------- About the Hosts -----------------
 
